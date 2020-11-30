@@ -1,0 +1,77 @@
+
+int y=0;
+int i=0;
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(3, OUTPUT);
+  Serial.begin(9600);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+    /*kantti*/
+  /*if (y==0)
+  {
+    digitalWrite(3, HIGH);          
+    Serial.println(analogRead(A0));
+    i++;
+    if (i==50)
+      {
+        y=1;
+      }
+  }else
+  {  
+    digitalWrite(3, LOW);
+    Serial.println(analogRead(A0));
+    i=i-1;
+    if(i==0)
+    {
+      y=0;
+    }
+  }
+  */
+
+    /*-----------------------------*/
+   /*kolmio*/
+   /*
+  if (y==0)
+  {
+    digitalWrite(3, HIGH);          
+    Serial.println(analogRead(A0)+i*10);
+    i++;
+    if (i==50)
+      {
+        y=1;
+      }
+  }else
+  {  
+    digitalWrite(3, LOW);
+    Serial.println(analogRead(A0)-1*10);
+    i=i-1;
+    if (i==0)
+    {
+      y=0;
+    }
+  }
+  */
+  
+    /*-----------------*/
+    /*saha*/
+   if (y==0)
+  {
+    digitalWrite(3, HIGH);          
+    Serial.println(analogRead(A0)+i*10);
+    i++;
+    if (i==50)
+      {
+        y=1;
+      }
+  }else
+  {  
+    i=0;
+    y=0;
+  } 
+  Serial.println("kierros");
+  delay(10);
+}
